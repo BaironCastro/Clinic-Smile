@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    min-height: 100vh;
+    background: url("../img/bg-header.png");
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+}
+header nav{
+    width: 84%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .logo{
+    width: 400px;
+}
+header ul a{
+    color: #05b4a4;
+    margin: 0 12px;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 23px;
+}
+header ul a:hover{
+    border-bottom: 1px solid #000000;
+}
+#hero{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5%;
+}
+#hero h2{
+    font-size: 60px;
+    color: #64fcdc;
+    font-weight: 600;
+}
+#hero h1{
+    font-size: 30px;
+    color: #05b4a4;
+    font-weight: 600;
+    margin-bottom: 40PX;
+    -webkit-text-stroke: .5px #000000;
+}
+#hero button{
+    background:  #d7fcf5;
+    color: #666;
+    padding: 10px 30px;
+    font-size: 26px;
+    border-radius: 8px;
+}
+#hero button:hover{
+    border: 2px solid #ffffff;
+    color: #05b4a4;
+    transition: 0.5s;
+}
+#servicios{
+    width: 100%;
+    position: relative;
+    padding: 40px 0;
+    text-align: center;
+}
+#servicios h2{
+    font-size:  40px;
+    margin-bottom: 30px;
+}
+#servicios p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#servicios p.info{
+    color: #05b4a4;
+}
+#servicios .fila{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+#servicios article{
+    margin: 20px 10px;
+    position: relative;
+    width: 30%;
+}
+#servicios article .imagen{
+    border-radius: 8px;
+}
+#servicios article img:hover{
+    transform: scale(.8);
+    transition: 0.5s;
+}
+#servicios article h3{
+    position: absolute;
+    top: 120px;
+    color: #d7fcf5;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+#Agenda{
+    width: 100%;
+    position: relative;
+    padding: 40px 0;
+    text-align: center;
+}
+#Agenda h2{
+    font-size:  30px;
+    color: #000000;
+    padding: 35% 0 0 0;
+    text-transform: uppercase;
+}
+#Agenda .fila{
+    width: 60%;
+    margin: 0 20%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    background: #6ffcdc;
+    border-radius: 8px;
+}
+#Agenda article{
+    margin: 20px 10px;
+    position: relative;
+    width: 40%;
+}
+#Agenda article img{
+    border-radius: 8px;
+}
+#Agenda button{
+    background:  #d7fcf5;
+    color: #666;
+    padding: 10px 30px;
+    font-size: 26px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+#Agenda button:hover{
+    border: 2px solid #ffffff;
+    color: #05b4a4;
+    transition: 0.5s;
+}
+#doctores{
+    width: 100%;
+    padding: 70px 0 50px;
+    text-align: center;
+}
+#doctores h2{
+    font-size:  50px;
+    color: #000000;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#doctores .fila{
+    display: flex;
+    justify-content: center;
+    padding: 10px 70px;
+}
+#doctores article{
+    margin: 30px 30px;
+}
+#doctores img{
+    border-radius: 50%;
+}
+#doctores article img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+#doctores h3{
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+}
+#doctores p{
+    text-align: justify;
+}
+#doctores p.especialidad{
+    margin: 10px;
+    color: #4ce4c4;
+    text-align: center;
+    font-size: 20px;
+}
+#doctores p.formacion{
+    margin: 10px;
+    color:  #05b4a4;
+    text-align: center;
+    font-size: 20px;
+}
+#sedes h2{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 40px;
+    justify-content: space-between;
+}
+#sedes .fila{
+    margin: 80px 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#sedes article{
+    justify-content: space-between;
+    margin: 30px 50px;
+    background: #99fce6;
+}
+#sedes ul{
+    margin-bottom: 20px;
+}
+#sedes a{
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000000;
+}
+#contacto{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 80px 0;
+    background: #d7fcf5;
+}
+#contacto h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+#contacto p{
+    font-size: 20px;
+    margin-bottom:  30px;
+}
+#contacto form{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#contacto form input{
+    width: 38%;
+    padding:  12px 20px;
+    font-size:  20px;
+    margin: 20px;
+}
+#contacto form select{
+    width: 43%;
+    padding:  12px 20px;
+    font-size:  20px;
+    margin: 20px;  
+}
+#contacto form label.terminos{
+    width: 70%;
+    margin-top: 20PX;
+    font-size: 17PX;
+}
+#contacto button{
+    margin-top: 20px;
+    background: #05b4a4;
+    color: #666;
+    font-size: 22px;
+    padding: 12px 30px;
+    border-radius: 6px;
+}
+#contacto button:hover{
+    border: 2px solid #ffffff;
+    color: #d7fcf5;
+    transition: 0.5s;
+}
+hr{
+    position: relative;
+    margin: 22px 40px;
+    border-color: #666666;
+}
+img.diente{
+    display: flex;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+}
+img:hover{
+    transform: scale(.8);
+    transition: 1.5s;
+}
+footer{
+    background: #000000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+footer img {
+    width: 400px;
+}
+footer h2{
+    font-size: 15px;
+    margin-top: 15px;
+}
+footer nav{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+footer h3{
+    margin: 10px;
+}
+footer ul{
+    margin: 0px 50px 0px 50px;
+    text-align: center;
+    padding: 10px 30px;
+    list-style: none;
+    justify-content: center;
+}
+footer nav ul{
+    text-align: center;
+}
+footer li{
+    margin-bottom: 5px;
+}
+footer a{
+    text-decoration: none;
+}
+footer a{
+    margin: 0 20px;
+}
+footer p{
+    margin-top: 10px;
+    font-size: 10px;
+}
